@@ -1,4 +1,6 @@
 class SessionsController < ApplicationController
-	protect_from_forgery with: :exception
 
+	def new
+		@user = User.new
+	end
 end
